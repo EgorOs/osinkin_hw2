@@ -10,6 +10,6 @@ def partial(func, *fixated_args, **fixated_kwargs):
     wrapper.__name__ = 'partial_' + func.__name__
     wrapper.__doc__ = """ A partial implementation of {}
     with pre-applied arguments being:
-    <перечисление имен и значений fixated_args и fixated_kwargs> """.format(
-        func.__name__)
+    {}  {} """.format(
+        func.__name__, fixated_args, fixated_kwargs)
     return wrapper

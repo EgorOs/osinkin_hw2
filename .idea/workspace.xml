@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fda191d5-873e-4c1e-be34-b7f549ab716b" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task_1.py" afterPath="$PROJECT_DIR$/task_1.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task_2.py" afterPath="$PROJECT_DIR$/task_2.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task_3.py" afterPath="$PROJECT_DIR$/task_3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/task_4.py" afterPath="$PROJECT_DIR$/task_4.py" />
-    </list>
+    <list default="true" id="fda191d5-873e-4c1e-be34-b7f549ab716b" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
