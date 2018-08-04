@@ -1,14 +1,23 @@
 #!/usr/bin/env python3
 
+from string import ascii_lowercase
+
 
 def letters_range(*args):
 
     if len(args) > 3:
-        raise TypeError('letters_range expected at most 3 arguments, got {}'.format(len(args)))
-    elif len(args) < 3:
-        for i, arg in enumerate(args):
-            if not isinstance(arg, str):
-                raise TypeError('str argument expected, not {}'.format(type(args[i]).__name__))
+        raise TypeError(
+            'letters_range expected at most 3 arguments, got {}'
+            .format(len(args)))
+
+    elif len(args) <= 3:
+        if len(args) == 3 and not isinstance(args[2], int):
+            raise TypeError('step must be an int, got {}'
+                            .format(type(args[2]).__name__))
+        for arg in args[:2]:
+            if str(arg) not in ascii_lowercase:
+                raise TypeError('ascii_lowercase character expected, got {}'
+                                .format(arg))
 
     ltr = []
 
@@ -21,10 +30,3 @@ def letters_range(*args):
     for i in range(*args_to_num):
         ltr.append(chr(i))
     return ltr
-
-print(letters_range('A','k', 2))
-
-# bad cases (1), ('a',1), ('a','l','m',1)
-# import string ??? # shorter if dict is used
-# if not in ascii.lowercase() --> invalid character
-# do I need out of bounds check
